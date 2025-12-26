@@ -2,12 +2,16 @@
 
 /* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 
 /* Custom font definitions using @theme */
 @theme {
   --font-family-noto: "Noto Sans", sans-serif;
   --font-family-kr: "Noto Sans KR", sans-serif;
   --font-family-lex: "Lexend", sans-serif;
+  --font-family-Inter: "Inter" , sans-serif;
+  --font-family-Alex: "Alexandria" , sans-serif;
 }
 
 /* Custom utility classes (optional - agar direct use karna ho) */
@@ -21,4 +25,11 @@
 
 .font-lex {
   font-family: var(--font-family-lex);
+}
+
+.font-Int {
+  font-family: var(--font-family-Inter);
+}
+.font-Alex{
+  font-family: var(--font-family-Alex)
 }

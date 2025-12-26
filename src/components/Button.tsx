@@ -10,6 +10,7 @@ export type ButtonVariant =
   | "yellowSolid"
   | "whiteSolid"
   | "whitePhone"
+  | "bluephone"
   | "darkCalendar"
   | "yellowPhone"
   | "darkPhone";
@@ -19,15 +20,15 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant = "yellowSolid", text, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ variant = "yellowSolid", text, className, ...props }) => {
   const variantMap: Record<ButtonVariant, JSX.Element> = {
     yellowSolid: (
       <button
-        className="text-[#00144F] px-4 sm:px-5 py-2 sm:py-4 rounded-full
+        className={`text-[#00144F] px-4 sm:px-5 py-2 sm:py-4 rounded-full
         cursor-pointer bg-[#F5AF1B] font-lex font-bold sm:font-semibold text-[0.65rem] sm:text-sm
         border-none hover:bg-white shadow-2xl hover:-translate-y-1 
         hover:scale-105 transition ease-out duration-150 
-        flex justify-between items-center gap-2"
+        flex justify-between items-center gap-2 ${className}`}
         {...props}
       >
         {text}
@@ -57,6 +58,21 @@ const Button: React.FC<ButtonProps> = ({ variant = "yellowSolid", text, ...props
         {text}
         <span className="flex justify-start items-center gap-2">
           <img src={phoneBtnSvg} alt="" className="w-4 sm:w-4" /> 360-241-4434
+        </span>
+      </button>
+    ),
+    bluephone: (
+      <button
+        className={`text-white/80 px-4 sm:px-5 py-2 sm:py-4 rounded-full
+        cursor-pointer bg-[#00144F] font-lex font-semibold text-sm
+        border-none hover:bg-[#F5AF1B] hover:text-[#00144F] shadow-2xl hover:-translate-y-1 
+        hover:scale-105 transition ease-out duration-150 
+        flex justify-between items-center gap-2 ${className}`}
+        {...props}
+      >
+        {text}
+        <span className="flex justify-start items-center gap-2">
+          <img src={phoneBtnSvg_3} alt="" className="w-4 sm:w-4 " /> 360-241-4434
         </span>
       </button>
     ),
