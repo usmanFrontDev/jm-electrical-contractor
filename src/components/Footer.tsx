@@ -9,7 +9,7 @@ type Props = {};
 const Footer = ({}: Props) => {
   return (
     <>
-      <div className=' w-full bg-[#ffead3] px-4 sm:px-20 pt-28 py-20'>
+      <div className=' w-full bg-[#ffead3] px-4 sm:px-20 pt-28 pb-0 sm:py-20'>
         {/* footertop */}
         <div className="flex flex-col sm:flex-row items-stretch justify-between">
             {/* footerleft */}

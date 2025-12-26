@@ -2,7 +2,7 @@ import React, { type HTMLAttributes, type ReactNode } from "react";
 import clsx from "clsx";
 
 // Variant names exactly as provided
-export type TypographyVariant = "shortShort" | "longPara" | "heading" | "bigHeading";
+export type TypographyVariant ="navLinks" | "shortShort" | "longPara" | "heading" | "bigHeading";
 
 export interface TypographyProps extends HTMLAttributes<HTMLParagraphElement> {
   variant?: TypographyVariant;
@@ -17,6 +17,7 @@ const Typography: React.FC<TypographyProps> = ({
   ...props
 }) => {
   const variantClasses: Record<TypographyVariant, string> = {
+    navLinks: "text-xs font-lex sm:text-sm text-white/80 max-sm:text-center font-normal",
     shortShort: "text-xs font-noto sm:text-sm text-white/80 max-sm:text-center font-normal",
     longPara: "text-xs font-kr sm:text-sm text-white/80 max-sm:text-center font-normal sm:leading-6",
     heading: "text-[1.7rem] font-kr sm:text-[3.4rem] text-white/80 max-sm:text-center font-bold leading-8 sm:leading-15",

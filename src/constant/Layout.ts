@@ -12,21 +12,20 @@ import blogHero from '../assets/img/blogHero.png'
 import faqHero from '../assets/img/faqsHero.png'
 
 
+import section2HomeBg from '../assets/img/section2img-1.png'
+import section2AboutBg1 from '../assets/img/section2Aboutimg-1.png'
+import section2AboutBg2 from '../assets/img/section2Aboutimg-2.png'
+import section2WhyBg1 from '../assets/img/section2whyimg-1.png'
+import section2WhyBg2 from '../assets/img/section2whyimg-2.png'
+import section2ServiceBg2 from '../assets/img/section2img-2.png'
+import section2ServiceBg3 from '../assets/img/section2img-3.png'
+import section2ServiceBg4 from '../assets/img/section2img-4.png'
+import section2ServiceBg5 from '../assets/img/section2img-5.png'
+import section2ServiceBg6 from '../assets/img/section2img-6.png'
+import section2ServiceBg7 from '../assets/img/section2img-7.png'
 
 
 
-
-// type button = {
-//   buttonText: string;
-// //   varaint: "yellow" | "white";   
-// };
-
-// type homeFirstPageType = {
-//   topPara: string;
-//   heading: string;
-//   para: string;
-//   bg: string;
-// };
 
 export const firstPageContent = {
  home:{
@@ -90,3 +89,61 @@ export const firstPageContent = {
    bg: faqHero,
 },
 };
+
+export const secondPageContent = {
+   home:{
+      bgImage: section2HomeBg,
+      chip: 'About us',
+      heading: 'Powering Your Home and Business with Excellence',
+      para: 'JEMI Electrical Contractor Inc. is a locally owned and operated business serving Palo Alto, Menlo Park, Redwood City, and the entire Bay Area. We pride ourselves on delivering top-tier electrical solutions with a focus on safety and customer satisfaction. Whether it’s a simple switch repair or a full commercial remodel, our team is ready to help.'
+   },
+      about:{
+      bgImage: section2AboutBg1,
+      bgImage2: section2AboutBg2,
+      chip: 'Our Story',
+      heading: 'Trusted Electrical Contractor in Palo Alto & The Bay Area',
+      para: 'Founded over two decades ago, Trusted Electrical Contractor began as a small local service provider in Palo Alto. With dedication, expertise, and a passion for innovation, we expanded across the Bay Area, becoming a reliable partner for residential, commercial, and industrial electrical projects. Our journey reflects a commitment to excellence and a reputation built on trust, safety, and long-term client relationships.'
+   },
+   
+  whyus:{
+      bgImage: section2WhyBg1,
+      bgImage2: section2WhyBg2,
+      heading: 'Full-Service Solutions: From Repairs to Large Projects',
+      para: 'We handle everything from simple repairs to complete installations for new constructions, remodels, panel upgrades, lighting systems, EV chargers, and more. One trusted contractor for all your electrical needs.',
+      btnText: 'Book an Appointment',
+      btnVaraint: 'darkCalendar',
+   },
+      service_1:{
+      bgImage: section2ServiceBg2,
+      heading: 'Electrical Repairs',
+      para: 'We handle all types of electrical repairs, from faulty outlets and switches to damaged wiring and malfunctioning panels. Our technicians quickly identify the issue and restore your system to full functionality, minimizing downtime and ensuring safety.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+
+    service_2:{
+      bgImage: section2ServiceBg3,
+      heading: 'EV Car Charger Installation',
+      para: 'We provide professional installation of EV chargers tailored to your vehicle and property. Our team handles everything from electrical panel assessments to wiring and setup, ensuring your charger is ready to deliver fast and safe charging at home or at your business.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+
+      service_3:{
+      bgImage: section2ServiceBg4,
+      heading: 'New Construction Electrical',
+      para: 'We design and install electrical systems for new builds, ensuring every circuit, outlet, and fixture is planned with precision. From initial wiring to final inspections, our team works closely with contractors and homeowners to deliver reliable systems that support modern living and business needs.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+      service_4:{
+      bgImage: section2ServiceBg5,
+      heading: 'Interior & Exterior Lighting',
+      para: 'We design and install lighting systems that transform both indoor and outdoor spaces. Whether it’s bright, functional lighting for kitchens and offices or ambient exterior lighting for patios and walkways, our solutions improve safety, usability, and atmosphere.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+
+
+
+}

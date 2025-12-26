@@ -7,6 +7,7 @@ import type { ButtonHTMLAttributes, JSX } from "react";
 
 
 export type ButtonVariant =
+    'onlyNumber'
   | "yellowSolid"
   | "whiteSolid"
   | "whitePhone"
@@ -127,6 +128,19 @@ const Button: React.FC<ButtonProps> = ({ variant = "yellowSolid", text, classNam
           <img src={phoneBtnSvg} alt="" className="w-4 sm:w-4 hidden group-hover:block" />
            360-241-4434
         </span>
+      </button>
+    ),
+    onlyNumber: (
+      <button
+        className="text-white/80 px-4 sm:px-5 py-2 sm:py-4 rounded-full
+        cursor-pointer font-lex font-medium text-sm
+        flex justify-between items-center gap-2"
+        {...props}
+      >
+          <span className="flex justify-start items-center gap-2">
+          <img src={phoneBtnSvg_3} alt="" className="w-4 sm:w-4" />
+        </span>
+        {text}
       </button>
     ),
   };
