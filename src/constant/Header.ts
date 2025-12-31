@@ -10,7 +10,7 @@ export const headerMenu = [
   {
     label: 'Service',
     children: [
-      { label: 'General Electrical Services', path: '/service' },
+      { label: 'General Electrical Services', path: '/services' },
       { label: 'EV Chargers', path: '/service-2' },
       { label: 'New Construction & Remodeling', path: '/service-3' },
       { label: 'Lighting & Control Systems', path: '/service-4' },

@@ -25,6 +25,17 @@ import section2ServiceBg6 from '../assets/img/section2img-6.png'
 import section2ServiceBg7 from '../assets/img/section2img-7.png'
 
 
+import avatar1 from '../assets/img/avatar-1.png'
+import avatar2 from '../assets/img/avatar-2.png'
+import avatar3 from '../assets/img/avatar-3.png'
+import avatar4 from '../assets/img/avatar-4.png'
+import avatar5 from '../assets/img/avatar-5.png'
+import avatar6 from '../assets/img/avatar-6.png'
+import avatar7 from '../assets/img/avatar-7.png'
+import avatar8 from '../assets/img/avatar-8.png'
+
+
+
 
 
 export const firstPageContent = {
@@ -111,7 +122,7 @@ export const secondPageContent = {
       heading: 'Full-Service Solutions: From Repairs to Large Projects',
       para: 'We handle everything from simple repairs to complete installations for new constructions, remodels, panel upgrades, lighting systems, EV chargers, and more. One trusted contractor for all your electrical needs.',
       btnText: 'Book an Appointment',
-      btnVaraint: 'darkCalendar',
+      btnVariant: 'darkCalendar',
    },
       service_1:{
       bgImage: section2ServiceBg2,
@@ -144,6 +155,160 @@ export const secondPageContent = {
       btnVariant: 'darkCalendar',
    },
 
+    service_5:{
+      bgImage: section2ServiceBg6,
+      heading: 'Outlet & Switch Installation',
+      para: 'We install new outlets and switches to improve convenience and functionality in your home or business. Whether you need additional power sources, modern designs, or upgraded safety features, our installations are tailored to your needs.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+
+    service_6:{
+      bgImage: section2ServiceBg7,
+      heading: 'Immediate Response',
+      para: 'Our certified electricians are available around the clock to handle urgent electrical issues. We arrive quickly, assess the situation, and take immediate action to restore safety and functionality.',
+      btnText: 'Book an Appointment',
+      btnVariant: 'darkCalendar',
+   },
+   gallery:{
+      images:[
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+         'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg'
+      ]
+   },
+   blog:{
+      heading1:'Editor’s Pick',
+      simpleCards:[
+         {
+            chip_1: 'ADVENTURE',
+            chip_2: 'FASHION',
+            date: '08.08.2021',
+            heading: 'Richird Norton photorealistic rendering as real photos',
+            para: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+         },
+            {
+            chip_1: 'ADVENTURE',
+            chip_2: 'FASHION',
+            date: '08.08.2021',
+            heading: 'Richird Norton photorealistic rendering as real photos',
+            para: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+         }
+      ],
+      heading2: 'Popular topics',
+      imgCards:[
+         {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Dream destinations to visit this year in Paris',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar1,
+            name: 'By Jennifer Lawrence',
+            role: 'Thinker & Designer'
+         },
+          {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Richird Norton photorealistic rendering as real photos',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar2,
+            name: 'By David Arthur',
+            role: 'Designer'
+         },
+          {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Dream destinations to visit this year in Paris',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar3,
+            name: 'By Sarah Lawrence',
+            role: 'Journalist'
+         },
+         {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Dream destinations to visit this year in Paris',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar4,
+           name: 'By Jennifer Lawrence',
+            role: 'Thinker & Designer'
+         },
+           {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Art of Seasons: 40+ Bright Illustrations by Nature',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar5,
+           name: 'By David Tomas',
+            role: 'Thinkers'
+         },
+          {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'The Anatomy of a Web Page and Basic Elements',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar6,
+           name: 'By Jennifer Lawrence',
+            role: 'Thinker & Designer'
+         },
+              {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Types of Contrast in User Interface Design',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar7,
+           name: 'By Andrey Edison',
+            role: 'Thinker & Designer'
+         },
+         
+              {
+            img: 'https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15085.jpg',
+            date: '08.08.2021',
+            heading: 'Dream destinations to visit this year in Paris',
+            param: 'Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.',
+            avatar: avatar8,
+           name: 'By Sean Anderson',
+            role: 'Thinker & Designer'
+         }
+      ]
+   },
+    faqs: {
+    heading: 'Frequently Asked Questions',
+    chip: 'FAQ',
+    list: [
+      {
+        number: '01',
+        heading: 'Alright, but what exactly do you do?',
+        para: 'As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.'
+      },
+      {
+        number: '02',
+        heading: "I don't need a brand strategist but I need help executing an upcoming campaign. Can we still work together?",
+        para: 'Yes, we are fully licensed, insured, and certified. All our electricians undergo regular training to maintain industry standards'
+      },
+      {
+        number: '03',
+        heading: 'Are your rates competitive?',
+        para: 'As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.'
+      },
+      {
+        number: '04',
+        heading: 'Why do you have a monthly project cap?',
+        para: 'As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.'
+      },
+    ]
+  }
+
 
 
 }
+

@@ -1,8 +1,9 @@
 import type { ReactNode } from "react";
-import { firstPageContent } from "../constant/Layout";
+import { firstPageContent, secondPageContent } from "../constant/Layout";
 import Header from "./Header";
 import SectionOne from "./SectionOne";
 import Footer from "./Footer";
+import SectionTwo, { type PageDataSectionTwo } from "./SectionTwo";
 
 type LayoutProps = {
   variant:
@@ -49,9 +50,10 @@ const Layout = ({ variant, children }: LayoutProps) => {
         isServicePage={combineStyleVariant2.includes(variant)}
         isCenterPage={combineStyleVariant3.includes(variant)}
       />
+    <SectionTwo pageData={secondPageContent[variant] as PageDataSectionTwo} variant={variant} />
       <>{children}</>
       {/* FOOTER */}
-     <Footer/>
+     <Footer variant={combineStyleVariant1.includes(variant) ? 'footer1' : 'footer2'}/>
     </div>
   );
 };

@@ -6,13 +6,13 @@ import { bannercontent } from "../constant/banner";
 
 
 // banner1
-const BannerVariantOne: React.FC<VariantProps> = ({ dataKey }) => {
+const BannerVariantOne: React.FC<VariantProps> = ({ dataKey, className }) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#F5AF1B] flex flex-col sm:flex-row gap-10 sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl '>
+        <div className={`h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#F5AF1B] flex flex-col sm:flex-row gap-10 sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl ${className}`}>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 mr-0 sm:-mr-32 ml-0 sm:ml-24'>
               <Typography
                 variant='heading'
@@ -41,13 +41,13 @@ const BannerVariantOne: React.FC<VariantProps> = ({ dataKey }) => {
 };
 
 // banner2
-const BannerVariantTwo: React.FC<VariantProps> = ({ dataKey }) => {
+const BannerVariantTwo: React.FC<VariantProps> = ({ dataKey, className }) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#F5AF1B] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl '>
+        <div className={`h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#F5AF1B] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl ${className}`}>
             <div className="w-full sm:w-1/2 h-auto mx:start relative "><img className="sm:absolute w-[90%] bottom-0 left-10" src={data.img} alt="" /></div>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 py-0 sm:py-10  mr-0 sm:mr-20'>
               <Typography
@@ -78,13 +78,13 @@ const BannerVariantTwo: React.FC<VariantProps> = ({ dataKey }) => {
 
 
 // banner3
-const BannerVariantThree: React.FC<VariantProps> = ({ dataKey }) => {
+const BannerVariantThree: React.FC<VariantProps> = ({ dataKey, className }) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#00144F] flex flex-col sm:flex-row gap-10 sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl '>
+        <div className={` h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#00144F] flex flex-col sm:flex-row gap-10 sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl ${className}`}>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 mr-0 sm:-mr-32 ml-0 sm:ml-24'>
               <Typography
                 variant='heading'
@@ -105,13 +105,13 @@ const BannerVariantThree: React.FC<VariantProps> = ({ dataKey }) => {
 
 
 // banner4
-const BannerVariantFour: React.FC<VariantProps> = ({ dataKey }) => {
+const BannerVariantFour: React.FC<VariantProps> = ({ dataKey, className }) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#00144F] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl '>
+        <div className={` h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#00144F] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl ${className}`}>
             <div className="w-full sm:w-1/2 h-auto mx:start relative "><img className="w-full sm:absolute -mb-8 sm:mb-0 -bottom-14 left-10" src={data.img} alt="" /></div>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 py-0 sm:py-8  mr-0 sm:mr-20'>
               <Typography
@@ -139,14 +139,14 @@ const BannerVariantFour: React.FC<VariantProps> = ({ dataKey }) => {
 
 
 // banner5
-const BannerVariantFive: React.FC<VariantProps> = ({ dataKey ,imgwidth}) => {
+const BannerVariantFive: React.FC<VariantProps> = ({ dataKey ,className}) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#00144F] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl overflow-hidden sm:overflow-visible '>
-            <div className="w-full sm:w-1/2 h-auto mx:start relative "><img className={`sm:absolute bottom-0 left-10 ${imgwidth ?? "w-[90%]"}`} src={data.img} alt="" /></div>
+        <div className={` h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#00144F] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl overflow-hidden sm:overflow-visible ${className}`}>
+            <div className="w-full sm:w-1/2 h-auto mx:start relative "><img className={`sm:absolute bottom-0 left-10 ${className}`} src={data.img} alt="" /></div>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 py-0 sm:py-14  mr-0 sm:mr-20'>
               <Typography
                 variant='heading'
@@ -172,13 +172,13 @@ const BannerVariantFive: React.FC<VariantProps> = ({ dataKey ,imgwidth}) => {
 };
 
 
-const BannerVariantSix: React.FC<VariantProps> = ({ dataKey }) => {
+const BannerVariantSix: React.FC<VariantProps> = ({ dataKey, className }) => {
   const data = bannercontent[dataKey];
   return (
     <>
       <div>
-        <div className='bg-red-800 h-screen w-full flex items-center justify-center'>
-          <div className='w-[90%] sm:w-[70%] bg-[#F5AF1B] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl '>
+        <div className={` h-screen w-full flex items-center justify-center ${className}`}>
+          <div className={`w-[90%] sm:w-[80%] bg-[#F5AF1B] flex flex-col-reverse sm:flex-row sm:gap-0 pt-10 sm:pt-0 items-stretch rounded-xl sm:rounded-4xl ${className} `}>
             <div className="w-full sm:w-1/2 h-auto mx:start relative "><img className="sm:absolute w-[90%] bottom-0 left-10" src={data.img} alt="" /></div>
             <div className='w-full sm:w-1/2 flex flex-col items-center justify-center gap-4 py-0 sm:py-14  mr-0 sm:mr-20'>
               <Typography
@@ -211,33 +211,33 @@ type BannerKey = keyof typeof bannercontent;
 
 interface VariantProps {
   dataKey: BannerKey;
-  imgwidth?:string,
+  className?:string,
 }
 
 interface BannerProps {
   variant: BannerVariant;
   dataKey: BannerKey;  
-  imgwidth?:string,
+  className?:string,
 }
 
 
-const Banner: React.FC<BannerProps> = ({ variant,dataKey,imgwidth  }) => {
+const Banner: React.FC<BannerProps> = ({ variant,dataKey,className  }) => {
   switch (variant) {
     case "variantOne":
-      return <BannerVariantOne dataKey={dataKey} />;
+      return <BannerVariantOne dataKey={dataKey}  className={className} />;
 
     case "variantTwo":
-      return <BannerVariantTwo dataKey={dataKey} />;
+      return <BannerVariantTwo dataKey={dataKey} className={className} />;
 
     case "variantthree":
-    return <BannerVariantThree dataKey={dataKey} />;
+    return <BannerVariantThree dataKey={dataKey} className={className} />;
     case "variantfour":
-    return <BannerVariantFour dataKey={dataKey} />;
+    return <BannerVariantFour dataKey={dataKey} className={className}/>;
     case "variantfive":
-    return <BannerVariantFive dataKey={dataKey} imgwidth={imgwidth}/>;
+    return <BannerVariantFive dataKey={dataKey} className={className}/>;
       
     case "variantsix":
-    return <BannerVariantSix dataKey={dataKey} />;
+    return <BannerVariantSix dataKey={dataKey} className={className} />;
       
     default:
       return null;
